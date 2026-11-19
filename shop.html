@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Магазин MURŌ — кава в зернах, напої та особистий кабінет</title>
+  <meta name="description" content="Магазин MURŌ: свіжообсмажена кава в зернах, готові напої, кошик та особистий кабінет з програмою лояльності." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Montserrat:wght@300;400;500;600&family=Raleway:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.min.js"></script>
+</head>
+<body>
+
+  <header>
+    <nav class="container nav">
+      <a href="index.html" class="logo">
+        <span class="muro-logo">
+          <img class="logo-mark" src="img/muro-logo.webp" alt="MURŌ" width="46" height="46" />
+          <span class="logo-text">
+            <span class="logo-word">MURŌ</span>
+            <span class="logo-sub">Coffee &amp; good days</span>
+          </span>
+        </span>
+      </a>
+      <ul id="nav-links">
+        <li><a href="index.html#about">Про нас</a></li>
+        <li><a href="index.html#bestsellers">Бестселери</a></li>
+        <li><a href="index.html#catalog">Каталог</a></li>
+        <li><a href="index.html#reviews">Відгуки</a></li>
+        <li><a href="shop.html" class="active">Магазин</a></li>
+        <li><a href="#account">Акаунт</a></li>
+      </ul>
+      <a href="#cart" class="cart-btn" id="cart-btn">
+        <i data-lucide="shopping-bag"></i>
+        <span class="cart-count" id="cart-count">0</span>
+      </a>
+      <button class="menu-btn" id="menu-btn"><i data-lucide="menu"></i></button>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- Shop hero -->
+    <section class="shop-hero">
+      <span class="bean" style="width:64px;height:64px;left:6%;top:38%;transform:rotate(-30deg)"><i data-lucide="bean"></i></span>
+      <span class="bean" style="width:42px;height:42px;left:16%;bottom:12%;transform:rotate(40deg)"><i data-lucide="bean"></i></span>
+      <span class="bean" style="width:72px;height:72px;right:8%;top:30%;transform:rotate(70deg)"><i data-lucide="bean"></i></span>
+      <span class="bean" style="width:40px;height:40px;right:20%;bottom:10%;transform:rotate(-15deg)"><i data-lucide="bean"></i></span>
+      <div class="container">
+        <p class="shop-eyebrow">Coffee &amp; good days</p>
+        <h1 class="h-gold">Магазин та особистий кабінет</h1>
+        <p class="shop-subtitle">Свіжообсмажена кава в зернах і готові напої від <span class="brand">MURŌ</span>. Замовляйте онлайн, забирайте у кав&apos;ярні та накопичуйте бонуси.</p>
+        <div class="shop-hero-actions">
+          <a href="#cart" class="btn btn-primary">Перейти до кошика</a>
+          <a href="#account" class="btn btn-outline">Особистий кабінет</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products -->
+    <section class="catalog shop-catalog" id="products">
+      <span class="bean" style="width:60px;height:60px;left:2%;top:20%;transform:rotate(-40deg)"><i data-lucide="bean"></i></span>
+      <div class="container">
+        <h2 class="h-gold">Каталог товарів</h2>
+
+        <div class="filter-bar">
+          <button class="btn btn-primary filter-btn" data-category="all">Усі</button>
+          <button class="btn btn-outline filter-btn" data-category="beans">Кава в зернах</button>
+          <button class="btn btn-outline filter-btn" data-category="drinks">Готові напої</button>
+        </div>
+
+        <ul class="catalog-grid">
+          <li class="product" data-category="beans">
+            <img src="img/cat-beans.webp" alt="Кавові зерна, що падають у білу чашку" loading="lazy" />
+            <div class="product-body">
+              <h3>Колумбія Супремо</h3>
+              <p class="desc">Збалансований смак з нотами какао, карамелі та горіхів</p>
+              <span class="volume">250 г</span>
+              <span class="price">420 грн</span>
+              <div class="product-actions">
+                <div class="qty">
+                  <button type="button" class="qty-btn card-qty-minus">−</button>
+                  <span class="qty-value card-qty-value">1</span>
+                  <button type="button" class="qty-btn card-qty-plus">+</button>
+                </div>
+                <button class="btn btn-primary add-to-cart" data-name="Колумбія Супремо (250 г)" data-price="420">У кошик</button>
+              </div>
+            </div>
+          </li>
+          <li class="product" data-category="beans">
+            <img src="img/best-pourover.webp" alt="Приготування пуроверу в керамічній воронці" loading="lazy" />
+            <div class="product-body">
+              <h3>Ефіопія Іргачеффе</h3>
+              <p class="desc">Світле обсмаження для фільтру: жасмин, бергамот і цитрус</p>
+              <span class="volume">250 г</span>
+              <span class="price">480 грн</span>
+              <div class="product-actions">
+                <div class="qty">
+                  <button type="button" class="qty-btn card-qty-minus">−</button>
+                  <span class="qty-value card-qty-value">1</span>
+                  <button type="button" class="qty-btn card-qty-plus">+</button>
+                </div>
+                <button class="btn btn-primary add-to-cart" data-name="Ефіопія Іргачеффе (250 г)" data-price="480">У кошик</button>
+              </div>
+            </div>
+          </li>
+          <li class="product" data-category="beans">
+            <img src="img/best-espresso.webp" alt="Еспресо з густою крема, що стікає з портафільтра" loading="lazy" />
+            <div class="product-body">
+              <h3>Еспресо-суміш MURŌ</h3>
+              <p class="desc">Фірмовий бленд для еспресо та молочних напоїв: шоколад і спеції</p>
+              <span class="volume">1 кг</span>
+              <span class="price">1450 грн</span>
+              <div class="product-actions">
+                <div class="qty">
+                  <button type="button" class="qty-btn card-qty-minus">−</button>
+                  <span class="qty-value card-qty-value">1</span>
+                  <button type="button" class="qty-btn card-qty-plus">+</button>
+                </div>
+                <button class="btn btn-primary add-to-cart" data-name="Еспресо-суміш MURŌ (1 кг)" data-price="1450">У кошик</button>
+              </div>
+            </div>
+          </li>
+          <li class="product" data-category="drinks">
+            <img src="img/cat-coldbrew.webp" alt="Колд брю у скляній пляшці з молоком" loading="lazy" />
+            <div class="product-body">
+              <h3>Колд брю</h3>
+              <p class="desc">Повільна холодна екстракція 18 годин</p>
+              <span class="volume">500 мл</span>
+              <span class="price">150 грн</span>
+              <div class="product-actions">
+                <div class="qty">
+                  <button type="button" class="qty-btn card-qty-minus">−</button>
+                  <span class="qty-value card-qty-value">1</span>
+                  <button type="button" class="qty-btn card-qty-plus">+</button>
+                </div>
+                <button class="btn btn-primary add-to-cart" data-name="Колд брю (500 мл)" data-price="150">У кошик</button>
+              </div>
+            </div>
+          </li>
+          <li class="product" data-category="drinks">
+            <img src="img/cat-iced.webp" alt="Айс-кава з вершками у склянці" loading="lazy" />
+            <div class="product-body">
+              <h3>Айс-кава</h3>
+              <p class="desc">Ідеальний варіант освіжаючого напою в спекотну погоду</p>
+              <span class="volume">300 мл</span>
+              <span class="price">130 грн</span>
+              <div class="product-actions">
+                <div class="qty">
+                  <button type="button" class="qty-btn card-qty-minus">−</button>
+                  <span class="qty-value card-qty-value">1</span>
+                  <button type="button" class="qty-btn card-qty-plus">+</button>
+                </div>
+                <button class="btn btn-primary add-to-cart" data-name="Айс-кава (300 мл)" data-price="130">У кошик</button>
+              </div>
+            </div>
+          </li>
+          <li class="product" data-category="drinks">
+            <img src="img/best-iced-latte.webp" alt="Айс-лате з молоком у високій склянці" loading="lazy" />
+            <div class="product-body">
+              <h3>Айс-лате</h3>
+              <p class="desc">Подвійне еспресо, холодне молоко та лід</p>
+              <span class="volume">350 мл</span>
+              <span class="price">95 грн</span>
+              <div class="product-actions">
+                <div class="qty">
+                  <button type="button" class="qty-btn card-qty-minus">−</button>
+                  <span class="qty-value card-qty-value">1</span>
+                  <button type="button" class="qty-btn card-qty-plus">+</button>
+                </div>
+                <button class="btn btn-primary add-to-cart" data-name="Айс-лате (350 мл)" data-price="95">У кошик</button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Cart & Checkout -->
+    <section class="cart-section" id="cart">
+      <div class="container">
+        <h2 class="h-gold">Ваш кошик</h2>
+        <div class="cart-box">
+          <div class="cart-list-wrap">
+            <ul class="cart-items" id="cart-items"></ul>
+            <div class="cart-summary">
+              <div class="cart-summary-row">
+                <span>Сума товарів:</span>
+                <span id="cart-subtotal">0 грн</span>
+              </div>
+              <div class="cart-summary-row cart-discount-row is-hidden" id="cart-discount-row">
+                <span>Знижка постійного гостя (10%):</span>
+                <span id="cart-discount">−0 грн</span>
+              </div>
+              <div class="cart-summary-row bonus-use-wrap is-hidden" id="bonus-use-wrap">
+                <label class="bonus-label">
+                  <input type="checkbox" id="use-bonuses" />
+                  <span>Списати бонуси (доступно <span id="available-bonuses">0</span> грн)</span>
+                </label>
+                <span id="cart-bonus-discount">−0 грн</span>
+              </div>
+              <div class="cart-summary-row cart-summary-total">
+                <span>Разом до сплати:</span>
+                <strong id="cart-total">0 грн</strong>
+              </div>
+              <p class="cart-login-hint" id="cart-login-hint">
+                <a href="#account">Увійдіть або зареєструйтеся в акаунті</a>, щоб отримати знижку 10% та використовувати бонуси.
+              </p>
+            </div>
+          </div>
+
+          <form class="form checkout-form" id="checkout-form">
+            <h3 class="form-title">Оформлення замовлення</h3>
+            <label class="form-field">
+              Ім&apos;я
+              <input type="text" id="checkout-name" placeholder="Ваше ім'я" required />
+            </label>
+            <label class="form-field">
+              Телефон
+              <input type="tel" id="checkout-phone" placeholder="+38 (0__) ___-__-__" required />
+            </label>
+            <label class="form-field">
+              Відділення / Кав&apos;ярня для самовивозу
+              <select id="checkout-pickup" required>
+                <option value="" disabled selected>Оберіть пункт отримання</option>
+                <option value="Кав'ярня MURŌ, вул. Хрещатик, 15">Кав&apos;ярня MURŌ — вул. Хрещатик, 15</option>
+                <option value="Кав'ярня MURŌ, вул. Велика Васильківська, 40">Кав&apos;ярня MURŌ — вул. Велика Васильківська, 40</option>
+                <option value="Кав'ярня MURŌ, просп. Берестейський, 12">Кав&apos;ярня MURŌ — просп. Берестейський, 12</option>
+                <option value="Доставка у відділення Нової пошти">Нова пошта — доставка у відділення</option>
+              </select>
+            </label>
+            <button type="submit" class="btn btn-primary">Оформити замовлення</button>
+            <p class="form-message" id="checkout-message"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Account -->
+    <section class="account" id="account">
+      <span class="bean" style="width:64px;height:64px;left:3%;bottom:16%;transform:rotate(25deg)"><i data-lucide="bean"></i></span>
+      <span class="bean" style="width:50px;height:50px;right:5%;top:18%;transform:rotate(-35deg)"><i data-lucide="bean"></i></span>
+      <div class="container">
+        <h2 class="h-gold">Особистий кабінет</h2>
+
+        <div class="auth-tabs" id="auth-tabs">
+          <button class="auth-tab is-active" data-tab="register">Реєстрація</button>
+          <button class="auth-tab" data-tab="login">Вхід</button>
+        </div>
+
+        <div class="t-frame account-frame">
+          <div class="auth-panel">
+            <form class="form" id="register-form">
+              <label class="form-field">
+                Ім&apos;я
+                <input type="text" id="register-name" placeholder="Ваше ім'я" required />
+              </label>
+              <label class="form-field">
+                Email
+                <input type="email" id="register-email" placeholder="you@example.com" required />
+              </label>
+              <label class="form-field">
+                Телефон
+                <input type="tel" id="register-phone" placeholder="+38 (0__) ___-__-__" required />
+              </label>
+              <label class="form-field">
+                Пароль
+                <input type="password" id="register-password" placeholder="Мінімум 6 символів" minlength="6" required />
+              </label>
+              <button type="submit" class="btn btn-primary">Зареєструватися</button>
+            </form>
+
+            <form class="form is-hidden" id="login-form">
+              <label class="form-field">
+                Email
+                <input type="email" id="login-email" placeholder="you@example.com" required />
+              </label>
+              <label class="form-field">
+                Пароль
+                <input type="password" id="login-password" placeholder="Ваш пароль" required />
+              </label>
+              <button type="submit" class="btn btn-primary">Увійти</button>
+            </form>
+
+            <div class="profile-card is-hidden" id="profile-view">
+              <span class="profile-avatar" id="profile-avatar">M</span>
+              <h3>Вітаємо, <span id="profile-name"></span>!</h3>
+              <p class="profile-email" id="profile-email"></p>
+              <p class="profile-bonus" id="profile-bonus">150 бонусів</p>
+              <button class="btn btn-outline" id="logout-btn">Вийти</button>
+            </div>
+          </div>
+
+          <aside class="loyalty">
+            <span class="loyalty-icon"><i data-lucide="coffee"></i></span>
+            <h3 class="h-gold">Програма лояльності <span class="brand">MURŌ</span></h3>
+            <p>Кешбек 10% з кожної покупки та знижки для постійних гостей.</p>
+            <ul class="loyalty-list">
+              <li>150 вітальних бонусів після реєстрації</li>
+              <li>Кожен 10-й напій — у подарунок</li>
+              <li>Ранній доступ до нових сортів</li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="logo">
+          <span class="muro-logo">
+            <img class="logo-mark" src="img/muro-logo.webp" alt="MURŌ" width="46" height="46" />
+            <span class="logo-text">
+              <span class="logo-word">MURŌ</span>
+              <span class="logo-sub">Coffee &amp; good days</span>
+            </span>
+          </span>
+        </a>
+        <p class="copy">Усі права захищені<br />© 2026 MURŌ</p>
+      </div>
+      <div><h3>Години роботи:</h3><p>Пн–Нд: 8:00–22:00</p></div>
+      <div><h3>Адреса:</h3><address>м. Київ, вул. Хрещатик, 15<br /><a href="#" class="underline">Повний список адрес</a></address></div>
+      <div><h3>Контакти:</h3><p>Телефон: <a href="tel:+380441234567">+38 (044) 123-45-67</a><br />Пошта: <a href="mailto:hello@muro.coffee">hello@muro.coffee</a></p></div>
+      <div>
+        <h3>Соцмережі:</h3>
+        <div class="socials">
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><i data-lucide="instagram"></i></a>
+          <a href="https://t.me" target="_blank" rel="noopener noreferrer"><i data-lucide="send"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
